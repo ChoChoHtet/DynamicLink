@@ -27,6 +27,9 @@ class ReceiveDataActivity : AppCompatActivity() {
                 intent.getStringExtra(Intent.EXTRA_TEXT)?.let {
                     binding.tvTitle.text = it
                 }
+                intent.getStringExtra("Tid")?.let {
+                    Log.d("Intent-data", it)
+                }
             }
         }
     }

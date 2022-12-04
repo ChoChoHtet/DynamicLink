@@ -18,6 +18,7 @@ fun Context.shareLink(deepLink: String) {
         action = Intent.ACTION_SEND
         putExtra(Intent.EXTRA_TEXT, deepLink)
         putExtra(Intent.EXTRA_TITLE, "Come join my team folks")
+        putExtra("Tid","622")
         type = "text/plain"
     }
     val shareIntent = Intent.createChooser(sendIntent, null)
